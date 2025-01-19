@@ -1,157 +1,178 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Daftar Hadir Siswa</title>
-    <style>
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
-
-        body {
-            padding: 20px;
-            font-family: Arial, sans-serif;
-            max-width: 1920px;
-            margin: 0 auto;
-        }
-
-        h2 {
-            margin-bottom: 20px;
-            text-align: center;
-        }
-
-        .container {
-            display: flex;
-            gap: 20px;
-            align-items: flex-start;
-        }
-
-        .table-container {
-            flex: 1;
-            overflow-x: auto;
-        }
-
-        table {
-            border-collapse: collapse;
-            width: 100%;
-            font-size: 14px;
-            background: white;
-        }
-
-        th, td {
-            border: 1px solid black;
-            padding: 6px;
-            text-align: left;
-        }
-
-        th {
-            background-color: #f5f5f5;
-        }
-
-        .attendance-cell {
-            width: 25px;
-            text-align: center;
-        }
-
-        .notes {
-            width: 300px;
-            padding: 20px;
-            background: #f9f9f9;
-            border-radius: 8px;
-            font-size: 14px;
-        }
-
-        .notes ul, .notes ol {
-            margin-left: 20px;
-            margin-bottom: 15px;
-        }
-
-        .notes li {
-            margin-bottom: 5px;
-        }
-
-        .signature {
-            margin-top: 30px;
-            text-align: right;
-        }
-
-        .signature p {
-            margin-bottom: 5px;
-        }
-
-        @media (max-width: 1200px) {
-            .container {
-                flex-direction: column;
-            }
-            
-            .notes {
-                width: 100%;
-            }
-        }
-    </style>
-</head>
-<body>
-    <h2>DAFTAR HADIR SISWA TAHUN PELAJARAN 2024/2025 KELAS : X RPL6</h2>
-    <div class="container">
-        <div class="table-container">
-            <table>
-                <thead>
-                    <tr>
-                        <th rowspan="2">NO</th>
-                        <th rowspan="2">NIS</th>
-                        <th rowspan="2">NAMA SISWA</th>
-                        <th colspan="10">Hari & Tgl :</th>
-                        <th colspan="10">Hari & Tgl :</th>
-                    </tr>
-                    <tr>
-                        <th>1</th><th>2</th><th>3</th><th>4</th><th>5</th>
-                        <th>6</th><th>7</th><th>8</th><th>9</th><th>10</th>
-                        <th>1</th><th>2</th><th>3</th><th>4</th><th>5</th>
-                        <th>6</th><th>7</th><th>8</th><th>9</th><th>10</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr><td>1</td><td>542241504</td><td>Ardian Risqi Nanda Pratama</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-                    <tr><td>2</td><td>542241505</td><td>Arfan Maulana Ibrahim</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-                    <tr><td>3</td><td>542241506</td><td>Arif Tegar Muhainim Karim</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-                    <tr><td>4</td><td>542241507</td><td>Arjuna Prasetya Dewanta</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-                    <tr><td>5</td><td>542241511</td><td>Assyfa Almira Shahada</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-                    <!-- Add remaining student rows following the same pattern -->
+<!DOCTYPE html>  
+<html lang="en">  
+<head>  
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <title>Daftar Hadir Siswa</title>  
+    <style>  
+        * {  
+            box-sizing: border-box;  
+            margin: 0;  
+            padding: 0;  
+        }  
+  
+        body {  
+            padding: 20px;  
+            font-family: Arial, sans-serif;  
+            max-width: 1920px;  
+            margin: 0 auto;  
+        }  
+  
+        h2 {  
+            margin-bottom: 20px;  
+            text-align: center;  
+        }  
+  
+        .container {  
+            display: flex;  
+            gap: 20px;  
+            align-items: flex-start;  
+        }  
+  
+        .table-container {  
+            flex: 1;  
+            overflow-x: auto;  
+        }  
+  
+        table {  
+            border-collapse: collapse;  
+            width: 100%;  
+            font-size: 14px;  
+            background: white;  
+        }  
+  
+        th, td {  
+            border: 1px solid black;  
+            padding: 6px;  
+            text-align: left;  
+        }  
+  
+        th {  
+            background-color: #f5f5f5;  
+        }  
+  
+        .attendance-cell {  
+            width: 25px;  
+            text-align: center;  
+        }  
+  
+        .notes {  
+            width: 300px;  
+            padding: 20px;  
+            background: #f9f9f9;  
+            border-radius: 8px;  
+            font-size: 14px;  
+        }  
+  
+        .notes ul, .notes ol {  
+            margin-left: 20px;  
+            margin-bottom: 15px;  
+        }  
+  
+        .notes li {  
+            margin-bottom: 5px;  
+        }  
+  
+        .signature {  
+            margin-top: 30px;  
+            text-align: right;  
+        }  
+  
+        .signature p {  
+            margin-bottom: 5px;  
+        }  
+  
+        @media (max-width: 1200px) {  
+            .container {  
+                flex-direction: column;  
+            }  
+              
+            .notes {  
+                width: 100%;  
+            }  
+        }  
+    </style>  
+</head>  
+<body>  
+    <h2>DAFTAR HADIR SISWA TAHUN PELAJARAN 2024/2025 KELAS : X RPL6</h2>  
+    <div class="container">  
+        <div class="table-container">  
+            <table>  
+                <thead>  
+                    <tr>  
+                        <th rowspan="2">NO</th>  
+                        <th rowspan="2">NIS</th>  
+                        <th rowspan="2">NAMA SISWA</th>  
+                        <th colspan="10">Hari & Tgl :</th>  
+                        <th colspan="10">Hari & Tgl :</th>  
+                    </tr>  
+                    <tr>  
+                        <th>1</th><th>2</th><th>3</th><th>4</th><th>5</th>  
+                        <th>6</th><th>7</th><th>8</th><th>9</th><th>10</th>  
+                        <th>1</th><th>2</th><th>3</th><th>4</th><th>5</th>  
+                        <th>6</th><th>7</th><th>8</th><th>9</th><th>10</th>  
+                    </tr>  
+                </thead>  
+                <tbody>  
+                    <tr><td>1</td><td>542241504</td><td>Ardian Risqi Nanda Pratama</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>  
+                    <tr><td>2</td><td>542241505</td><td>Arfan Maulana Ibrahim</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>  
+                    <tr><td>3</td><td>542241506</td><td>Arif Tegar Muhaimin Karim</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>  
+                    <tr><td>4</td><td>542241507</td><td>Arjuna Prasetya Dewanta</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>  
+                    <tr><td>5</td><td>542241511</td><td>Asyifa Almira Shahada</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>  
                 </tbody>
-            </table>
-        </div>
-
-        <div class="notes">
-            <p><strong>Keterangan:</strong></p>
-            <p>Ketidak hadiran siswa diisi dengan huruf :</p>
-            <ul>
-                <li>D - Dispensasi</li>
-                <li>A - Alpha</li>
-                <li>S - Sakit</li>
-                <li>I - Ijin</li>
-            </ul>
-
-            <p><strong>CATATAN :</strong></p>
-            <ol>
-                <li>Ketua Kelas / Sekretaris harus mengisi presensi dan jurnal pada setiap hari pelaksanaan KBM</li>
-                <li>Pengajar harus :
-                    <ul>
-                        <li>a. Mengisi jurnal berdasarkan materi KBM yang disampaikan</li>
-                        <li>b. Membubuhkan paraf pada lembar presensi dan jurnal setiap selesai mengajar.</li>
-                    </ul>
-                </li>
-            </ol>
-
-            <div class="signature">
-                <p>Malang, _____________</p>
-                <p>Wali Kelas</p>
-                <br><br>
-                <p>Aulia Mas'adah, S.Kom.</p>
-            </div>
-        </div>
-    </div>
-</body>
-</html>
+                <tr>
+                    <th colspan="3"class="bottom"><div class="Keterangan :"></div>
+                        <strong >Keterangan :</strong></th>
+                        
+                        <th>1</th>
+                        <td>2</td>
+                        <td>3</td>
+                        <td>4</td>
+                        <td>5</td>
+                        <th>6</th>
+                        <td>7</td>
+                        <td>8</td>
+                        <td>9</td>
+                        <td>10</td>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                        <td>4</td>
+                        <td>5</td>
+                        <td>6</td>
+                        <td>7</td>
+                        <td>8</td>
+                        <td>9</td>
+                        <td>10</td>
+                        
+                </tr>
+                <tr>
+                    <th colspan="3" class="bottom"> <p>Ketidak hadiran siswa diisi dengan huruf :</p><p>D - Dispensasi <p>A - Alpha <p>I - Ijin <p>S - Sakit</p></p></p></p></th>
+                    <td></td>                
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>                
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+        
+        
+                </tr>
+            </table>  
+        </div>  
+    </div>  
+</body>  
+</html>  
