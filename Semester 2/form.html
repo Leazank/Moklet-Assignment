@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Formulir Informasi Pelamar</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+      padding: 20px;
+    }
+    fieldset {
+      width: 500px;
+      background: #fff;
+      padding: 20px;
+      border: 2px solid #999;
+    }
+    legend {
+      font-weight: bold;
+    }
+    label {
+      display: block;
+      margin-top: 10px;
+    }
+    input, select {
+      width: 100%;
+      padding: 5px;
+      margin-top: 5px;
+      box-sizing: border-box;
+    }
+    .small-inputs {
+      display: flex;
+      gap: 5px;
+    }
+    .small-inputs input {
+      flex: 1;
+    }
+  </style>
+</head>
+<body>
+
+  <form>
+    <fieldset>
+      <legend>Informasi Pelamar</legend>
+
+      <label>No. Induk Kependudukan (NIK) / No Passport</label>
+      <input type="text" name="nik">
+
+      <label>Nama Lengkap</label>
+      <input type="text" name="nama">
+
+      <label>Jenis Kelamin</label>
+      <select name="jenis_kelamin">
+        <option value="">Pilih Jenis Kelamin</option>
+        <option value="Laki-laki">Laki-laki</option>
+        <option value="Perempuan">Perempuan</option>
+      </select>
+
+      <label>Tempat Lahir</label>
+      <input type="text" name="tempat_lahir">
+
+      <label>Tanggal Lahir</label>
+      <input type="text" name="tanggal_lahir" placeholder="dd-mm-yyyy">
+
+      <label>Alamat</label>
+      <input type="text" name="alamat">
+
+      <div class="small-inputs">
+        <input type="text" name="kota" placeholder="Kota">
+        <input type="text" name="provinsi" placeholder="Provinsi">
+      </div>
+      <input type="text" name="kode_pos" placeholder="Kode Pos">
+
+      <label>No. Telp</label>
+      <input type="text" name="telepon">
+
+      <label>E-mail</label>
+      <input type="email" name="email">
+
+      <label>Asal Institusi Pendidikan</label>
+      <input type="text" name="institusi">
+
+      <label>No. Ijazah</label>
+      <input type="text" name="no_ijazah">
+
+      <label>Akreditasi <small>(contoh A / B / - untuk Universitas Negeri)</small></label>
+      <input type="text" name="akreditasi">
+
+      <label>Nilai IPK <small>(dalam skala 4, contoh 3.50)</small></label>
+      <input type="text" name="ipk">
+
+    </fieldset>
+  </form>
+
+</body>
+</html>
