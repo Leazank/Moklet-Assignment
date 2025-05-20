@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>10 Tempat Wisata Terbaik di Indonesia</title>
+  <style>
+    /* Reset & Base Styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    body {
+      background-color: #f8f9fa;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+      text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+      letter-spacing: 1px;
+      text-align: center;
+    }
+    h2 {
+      color: #1a2a6c;
+      margin: 1.5rem 0 0.75rem 0;
+      border-bottom: 2px dotted #1a2a6c;
+      padding-bottom: 0.5rem;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+    }
+    p {
+      margin-bottom: 1rem;
+      text-align: justify;
+      line-height: 1.8;
+    }
+    .subtitle {
+      font-size: 1.2rem;
+      margin-bottom: 1rem;
+      opacity: 0.9;
+      font-style: italic;
+      text-align: center;
+    }
+    .emphasis {
+      font-weight: bold;
+      color: #b21f1f;
+    }
+    .special-text {
+      font-size: 1.1rem;
+      color: #1a2a6c;
+      text-decoration: underline;
+    }
+    .intro-text {
+      font-size: 1.1rem;
+      line-height: 1.9;
+      margin-bottom: 1.5rem;
+      color: #222;
+      text-indent: 2rem;
+    }
+    .conclusion-text {
+      font-weight: 500;
+      font-size: 1.1rem;
+      font-style: italic;
+      color: #444;
+      padding: 0.5rem 0;
+    }
+
+    header {
+      background: linear-gradient(to right, #1a2a6c, #b21f1f, #fdbb2d);
+      color: white;
+      text-align: center;
+      padding: 3rem 1rem;
+      margin-bottom: 0;
+      border-bottom: 5px solid #fdbb2d;
+    }
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    .navbar {
+      background-color: #333;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+    }
+    .nav-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+    .logo {
+      color: white;
+      font-size: 1.5rem;
+      font-weight: bold;
+      padding: 15px 0;
+    }
+    .nav-links {
+      display: flex;
+      list-style: none;
+    }
+    .nav-links li {
+      padding: 0 15px;
+    }
+    .nav-links a {
+      color: white;
+      text-decoration: none;
+      font-size: 1rem;
+      transition: color 0.3s;
+      padding: 15px 0;
+      display: inline-block;
+      border-bottom: 3px solid transparent;
+    }
+    .nav-links a:hover,
+    .nav-links a.active {
+      color: #fdbb2d;
+      border-bottom: 3px solid #fdbb2d;
+    }
+
+    /* Kolom Teks */
+    .columns {
+      column-count: 2;
+      column-gap: 40px;
+      margin-top: 2rem;
+    }
+
+    /* Galeri Gambar */
+    .image-gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 15px;
+      margin: 2rem 0;
+    }
+    .image-gallery img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+      object-fit: cover;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+    .image-gallery img:hover {
+      transform: scale(1.03);
+    }
+
+    article {
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+      padding: 2rem;
+      margin: 2rem 0;
+      border-left: 5px solid #1a2a6c;
+      border-right: 5px solid #b21f1f;
+    }
+    .destination {
+      margin-bottom: 2.5rem;
+      padding-bottom: 1.5rem;
+      border-bottom: 2px dashed #ccc;
+      position: relative;
+    }
+    .destination:last-child {
+      border-bottom: none;
+    }
+    .destination:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: -2rem;
+      height: 100%;
+      width: 5px;
+      background: linear-gradient(to bottom, #1a2a6c, #b21f1f);
+    }
+    .highlight {
+      background-color: #fff9db;
+      border-left: 4px solid #fdbb2d;
+      border-right: 2px solid #fdbb2d;
+      border-top: 1px solid #fdbb2d;
+      border-bottom: 1px solid #fdbb2d;
+      border-radius: 5px;
+      padding: 1rem;
+      margin: 1.5rem 0;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .author {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 2rem;
+    }
+    .date {
+      font-style: italic;
+      color: rgba(255,255,255,0.8);
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem 0;
+      margin-top: 2rem;
+      background-color: #1a2a6c;
+      color: white;
+      border-top: 5px solid #fdbb2d;
+    }
+
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 2rem;
+      }
+      .columns {
+        column-count: 1;
+      }
+      .navbar {
+        position: relative;
+      }
+      .nav-container {
+        flex-direction: column;
+      }
+      .nav-links {
+        width: 100%;
+        flex-direction: column;
+        text-align: center;
+      }
+      .nav-links li {
+        padding: 10px 0;
+        border-top: 1px solid rgba(255,255,255,0.1);
+      }
+      .destination:before {
+        left: -1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>10 Tempat Wisata Terbaik di Indonesia</h1>
+      <p class="subtitle">Jelajahi keindahan alam, budaya, dan keajaiban tersembunyi di Nusantara</p>
+      <div class="author">
+        <div>
+          <p>Oleh: Wisatawan Nusantara</p>
+          <p class="date">20 Mei 2025</p>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="logo">Wisata Indonesia</div>
+      <ul class="nav-links">
+        <li><a href="#" class="active">Beranda</a></li>
+        <li><a href="#">Destinasi</a></li>
+        <li><a href="#">Kategori</a></li>
+        <li><a href="#">Tips Perjalanan</a></li>
+        <li><a href="#">Kontak</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="container">
+    <article>
+      <p class="intro-text">Indonesia, dengan lebih dari 17.000 pulau, menawarkan kekayaan wisata yang tak tertandingi.</p>
+
+      <!-- Kolom Teks -->
+      <section class="columns">
+        <p>Dari pantai berpasir putih hingga gunung berapi aktif, dari situs budaya kuno hingga kehidupan bawah laut yang memukau, Indonesia adalah <span class="emphasis">surga bagi para pelancong</span>. Berikut adalah 10 destinasi wisata terbaik yang wajib Anda kunjungi di Nusantara.</p>
+
+        <p>Berwisata ke Indonesia tidak hanya tentang melihat tempat baru, tetapi juga tentang mengenal keragaman budaya, menjelajah keindahan alam, serta merasakan pengalaman unik yang tidak bisa ditemukan di negara lain. Setiap sudut negeri ini memiliki cerita tersendiri yang layak untuk ditelusuri.</p>
+      </section>
+
+      <!-- Galeri Gambar -->
+      <div class="image-gallery">
+        <img src="bali.jpeg" alt="Bali" />
+        <img src="raja_ampat.jpg" alt="Raja Ampat" />
+        <img src="candi.webp" alt="Candi Borobudur" />
+        <img src="toraja.jpg" alt="Tana Toraja" />
+      </div>
+
+      <div class="highlight">
+        <p>💡 <strong>Tips Perjalanan:</strong> Waktu terbaik untuk mengunjungi Indonesia adalah selama <span class="special-text">musim kemarau (April hingga Oktober)</span>. Pastikan untuk selalu menghormati adat istiadat lokal dan menjaga kelestarian lingkungan saat berwisata.</p>
+      </div>
+
+      <!-- Destinasi Wisata -->
+      <div class="destination">
+        <h2>1. Bali - Pulau Dewata</h2>
+        <p>Bali tetap menjadi primadona pariwisata Indonesia...</p>
+      </div>
+      <div class="destination">
+        <h2>2. Labuan Bajo & Taman Nasional Komodo</h2>
+        <p>Labuan Bajo di Flores, Nusa Tenggara Timur, adalah gerbang menuju Taman Nasional Komodo...</p>
+      </div>
+      <div class="destination">
+        <h2>3. Raja Ampat - Surga Bawah Laut</h2>
+        <p>Raja Ampat di Papua Barat diakui sebagai salah satu destinasi diving terbaik di dunia...</p>
+      </div>
+      <div class="destination">
+        <h2>4. Yogyakarta - Pusat Budaya Jawa</h2>
+        <p>Yogyakarta adalah pusat budaya Jawa yang kaya dengan warisan sejarah...</p>
+      </div>
+      <div class="destination">
+        <h2>5. Tana Toraja - Budaya Unik dan Pegunungan Indah</h2>
+        <p>Tana Toraja di Sulawesi Selatan menawarkan pengalaman budaya yang unik dan mendalam...</p>
+      </div>
+      <div class="destination">
+        <h2>6. Danau Toba - Danau Vulkanik Terbesar di Dunia</h2>
+        <p>Danau Toba di Sumatera Utara adalah danau vulkanik terbesar di dunia...</p>
+      </div>
+      <div class="destination">
+        <h2>7. Taman Nasional Bromo Tengger Semeru</h2>
+        <p>Taman Nasional Bromo Tengger Semeru di Jawa Timur menawarkan salah satu pemandangan vulkanik paling menakjubkan di Indonesia...</p>
+      </div>
+      <div class="destination">
+        <h2>8. Wakatobi - Surga Bawah Laut di Sulawesi Tenggara</h2>
+        <p>Wakatobi adalah akronim dari empat pulau: Wangi-Wangi, Kaledupa, Tomia, dan Binongko...</p>
+      </div>
+      <div class="destination">
+        <h2>9. Kepulauan Banda - Pulau Rempah dengan Pesona Sejarah</h2>
+        <p>Kepulauan Banda di Maluku memiliki sejarah yang kaya sebagai pusat perdagangan pala dan cengkeh...</p>
+      </div>
+      <div class="destination">
+        <h2>10. Derawan - Surga Bahari di Kalimantan Timur</h2>
+        <p>Kepulauan Derawan di Kalimantan Timur terdiri dari beberapa pulau kecil yang menawarkan keindahan bahari luar biasa...</p>
+      </div>
+
+      <div class="highlight">
+        <p>🌿 <strong>Wisata Berkelanjutan:</strong> Saat mengunjungi destinasi-destinasi ini, ingatlah untuk selalu menjaga kebersihan, menghormati kehidupan liar, dan mendukung bisnis lokal untuk membantu pelestarian alam dan budaya Indonesia untuk generasi mendatang.</p>
+      </div>
+
+      <p class="conclusion-text">Indonesia memiliki begitu banyak destinasi menakjubkan yang layak untuk dijelajahi...</p>
+    </article>
+  </div>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Wisatawan Nusantara. Semua hak dilindungi.</p>
+      <p>Artikel ini dibuat untuk tujuan informatif dan inspirasi perjalanan.</p>
+    </div>
+  </footer>
+</body>
+</html>
